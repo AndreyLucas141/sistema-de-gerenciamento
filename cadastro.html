@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastros</title>
+</head>
+<body>
+  <div class="grid-wrapper">
+    <header>seja bem vindo fulano</header>
+      <div>
+        Nome <input type="text" class="text">
+        Estado <input type="text" class="text2">
+        Código do municipio<input type="text" class="text3">
+        Região <input type="text" class="text">
+      </div>
+      <p class="button">BUSCAR</p> <p class="button2">EXCLUIR</p> <p class="button3">CANCELAR</p> <p class="button4">SALVAR</p>
+          <ul>
+            <p>
+              <a href="home.html">HOME</a>
+            </p>
+            <p>
+              <a href="cadastro.html">CADASTROS</a>
+            </p>
+            <p  class="Azul">
+              <link rel="stylesheet" href="">CIDADE
+            </p>
+            <p class="Azul">
+              <link rel="stylesheet" href="index.html">ESTADO
+            </p>
+            <p class="Azul">
+              <link rel="stylesheet" href="">PAÍS
+            </p>
+            <p class="Azul">
+              <link rel="stylesheet" href="">USUÁRIO
+            </p>
+          </ul>
+          <footer>SISTEMA DE ARMAZENAMENTO GEOGRAFICO</footer>
+    </div>
+</body>
+<style>
+  body{
+    height: 100%;
+  }
+
+  .grid-wrapper{
+    height: 100vh;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: repeat(8 , 1fr);
+    grid-template-columns:repeat(50px, 8 , 100PX) ;
+  }
+
+  header{
+    background-color: #04C9F4;
+    grid-column: 2 / 9;
+    height: 60px;
+    text-align: center;
+  }
+
+  div{
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    grid-column: 3 / 6;
+    grid-row: 2 / 5;
+    margin: 0;
+    color: #fff;
+    padding: 10px;
+  }
+
+  ul{
+    background-color: #D9D9D9;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  p{
+    background-color: #D9D9D9;
+    margin: 3PX;
+    width: 100%;
+  }
+
+  .Azul{
+    background-color: #04C9F4;
+  }
+
+  .text{
+    width: 90%;
+    height: 30px;
+    border: #fff;
+  }
+  
+  .text2{
+    width: 10%;
+    height: 30px;
+    border: #fff;
+  }
+
+  .text3{
+    height: 30px;
+    width: 70%;
+    border: #fff;
+  }
+
+  .button{
+    background-color: #04C9F4;
+    grid-column: 3 /4;
+    height: 30px;
+    width: 50%;
+    text-align: center;
+  }
+
+  .button2{
+    background-color: #F40404;
+    grid-column: 4 / 5;
+    height: 30px;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .button3{
+    background-color: #fff ;
+    border: 1px solid;
+    color: #04C9F4;
+    grid-column: 5 / 6;
+    height: 30px;
+    width: 50%;
+    text-align: center;
+  }
+
+  .button4{
+    background-color: #04C9F4;
+    grid-column: 6 / 7;
+    height: 30px;
+    width: 50%;
+    text-align: center;
+  }
+
+  footer{
+    background-color: #fff;
+    border: 1px solid #E7E7E7;
+    color: #04C9F4;
+    text-align: center;
+    grid-column: 2 / 9;
+    grid-row: -2 / -1;
+    height: 60px;
+  }
+
+  @media screen and (min-width: 780px) {
+   .full-width-img {
+       margin: auto;
+       width: 90%;
+   }
+}
+</style>
+</html>
